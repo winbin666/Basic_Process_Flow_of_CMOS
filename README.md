@@ -1,2 +1,3 @@
 # Basic_Process_Flow_of_CMOS
 CMOS集成电路基本工艺流程3D图
+尽量围绕人机料法环描述
