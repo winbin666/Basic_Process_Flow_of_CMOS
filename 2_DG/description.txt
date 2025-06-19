@@ -1,0 +1,57 @@
+至此，做Well阱结束，接下来做栅氧化层
+
+
+******（DG LOOP）******
+1)	GATE1-OX：
+形成栅的氧化层（厚）。双栅工艺DG（Dual Gate）是生成两种不同厚度的栅氧化层GOX（Gate Ox）的工艺方法，如某产品做1.2V和2.5V两种不同栅氧厚度的器件，栅氧厚度分别为60埃和30埃。
+
+a)、PAD Ox Remove：之前的IMP损伤了Ox，无法满足GOX要求，需要去掉重做
+b)、Thick GOX Pre Clean：生长一层栅氧，后面再生长一层，加到一起就是厚栅氧。
+
+2)、DG-PH：通过PH不同区域生长Ox，形成双栅氧化层。
+
+3)、DG-ET：刻蚀掉GATE1未被PR覆盖的GOX
+
+4)、GATE2-OX：生长薄栅氧。部分区域就是薄栅，之前没刻蚀区域叠加此部分就成为厚栅。
+
+至此，做栅氧化层结束，接下来做N型多晶硅栅预掺的过程
+
+
+******NPO LOOP******
+1)、GPL-DEP：
+在Gate区域沉积一层多晶硅栅极（Polysilicon），DIFF
+
+a)	淀积厚的Poly，这是做成Gate的材料
+b)	淀积一层Ox，防止后续预掺杂IMP的磷P析出
+
+2)、NPO-PH：
+NPO（NMOS Poly Predope）：N型多晶硅栅预掺杂，为了抑制多晶硅耗尽效应，减小栅氧化层电性厚度。光刻定义需要IMP的poly区域（NMOS）
+
+3)、NPO-IMP：
+
+4)、NPO-STRIP：先干法刻蚀ETCH去胶，再湿法腐蚀TF-WET去胶。
+
+至此，做栅氧化层结束，接下来做栅（Gate，=POLY AND AA）的过程
+
+******GPL LOOP******
+此GPL（Gate Poly）LOOP是做Gate的主要部分。
+
+1)	GPLHM-OX：淀积HM，材料是Ox，CVD。Poly HM Oxide Deposition。
+
+2)	GPLHM-DEP：
+Poly HM LTO Deposition。LTO：低温二氧化硅，Low Temperature Oxide。LTO致密性较低，可以有效吸收离子。
+NPO后产生的离子析出会影响Poly质量，导致之后Etch会掉落在AA上形成Defect，LTO可以解决这个问题。
+
+3)	GPL-PH：Key Layer，CD的出处，OPC的Poly层次。定义POLY区域。
+
+4)	GPL-ET：
+a)	Etch：将图形传递到PR上
+b)	Wet Strip：去掉Poly周边残留胶及Pacticle
+
+5)	GPL-RTA
+a)	Poly Re-Oxidation Pre-Clean，作为re-ox的清洗
+b)	Poly Re-Oxidation 作为后续Spacer的缓冲层，可以修复Etch已损伤的缓冲层，且使角度更为圆满
+
+至此，做栅Gate结束
+
+
